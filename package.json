@@ -1,7 +1,7 @@
 {
   "name": "generator-ghost-theme",
-  "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "version": "0.1.0",
+  "description": "A Ghost theme generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
