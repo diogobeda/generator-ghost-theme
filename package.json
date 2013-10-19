@@ -1,0 +1,41 @@
+{
+  "name": "generator-ghost-theme",
+  "version": "0.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/diogobeda/generator-ghost-theme",
+  "bugs": "https://github.com/diogobeda/generator-ghost-theme/issues",
+  "author": {
+    "name": "Diogo Beda",
+    "email": "diogo.fbeda@gmail.com",
+    "url": "https://github.com/diogobeda"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diogobeda/generator-ghost-theme.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.13.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0-rc.1"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
