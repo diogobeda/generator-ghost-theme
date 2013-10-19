@@ -2,13 +2,6 @@
 
 A generator for [Yeoman](http://yeoman.io). This is a simple generator for [Ghost](http://ghost.org) themes.
 
-### TODO:
-
-* Add some sample codes with best pratices
-* Add and opinionated way for using SASS or other pre-compilers
-* Add Grunt tasks for compiling the previous
-
-
 ## Getting Started
 
 ### What is Yeoman?
