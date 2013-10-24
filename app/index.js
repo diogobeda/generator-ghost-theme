@@ -36,16 +36,25 @@ GhostThemeGenerator.prototype.askFor = function askFor() {
 };
 
 GhostThemeGenerator.prototype.app = function app() {
+  // folders
   this.mkdir('assets');
   this.mkdir('assets/css');
+  this.mkdir('assets/css/sass');
   this.mkdir('assets/js');
   this.mkdir('assets/fonts');
 
+  // css assets
   this.copy('assets/css/screen.css');
-  this.copy('default.hbs', 'default.hbs');
-  this.copy('index.hbs', 'index.hbs');
-  this.copy('post.hbs', 'post.hbs');
+  this.copy('assets/css/sass/screen.scss');
+  this.copy('assets/css/config.rb');
 
+  // handlebars templates
+  this.copy('default.hbs');
+  this.copy('index.hbs');
+  this.copy('post.hbs');
+  
+  // project files
+  this.copy('Gruntfile.js');
   this.template('_README.md', 'README.md');
   this.template('_package.json', 'package.json');
   this.template('_bower.json', 'bower.json');
