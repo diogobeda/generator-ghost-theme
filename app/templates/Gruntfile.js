@@ -10,17 +10,11 @@ module.exports = function (grunt) {
 				files: ['assets/css/{,*/}*.{scss, sass}'],
 				tasks: ['compass:server', 'autoprefixer']
 			},
-			handlebars: {
-				files: ['*.hbs', 'partials/{,*/}*.hbs'],
-				tasks: ['handlebars:server', 'staticHandlebars:server']
-			},
 			livereload: {
 				options: {
 					livereload: '<%%= connect.options.livereload %>'
 				},
 				files: [
-					'*.hbs',
-					'partials/{,*/}*.hbs',
 					'.tmp/styles/{,*/}*.css',
 					'{.tmp, assets/js}/{,*/}*.js',
 					'assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -51,13 +45,13 @@ module.exports = function (grunt) {
 				sassDir: 'assets/css/sass',
 				cssDir: '.tmp/styles',
 				imagesDir: 'assets/images',
-        javascriptsDir: 'assets/scripts',
-        fontsDir: 'assets/styles/fonts',
-        httpImagesPath: '/images',
-        httpGeneratedImagesPath: '/images/generated',
-        httpFontsPath: '/styles/fonts',
-        relativeAssets: false,
-        assetCacheBuster: false
+		        javascriptsDir: 'assets/scripts',
+		        fontsDir: 'assets/styles/fonts',
+		        httpImagesPath: '/images',
+		        httpGeneratedImagesPath: '/images/generated',
+		        httpFontsPath: '/styles/fonts',
+		        relativeAssets: false,
+		        assetCacheBuster: false
 			},
 			server: {
 				options: {
@@ -65,28 +59,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		// handlebars: {
-		// 	server: {
-		// 		options: {
-		// 			node: true	
-		// 		},
-		// 		files: {
-		// 			'.tmp/test.js': ['*.hbs', 'partials/{,*/}*.hbs']
-		// 		}
-		// 	}
-		// },
-		// staticHandlebars: {
-		// 	server: {
-		// 		options: {
-		// 			assets: {
-		// 				filesRoot: 'assets'
-		// 			}
-		// 		},
-		// 		files: {
-		// 			'.tmp/*.html': '*.hbs'
-		// 		}
-		// 	}
-		// },
 		autoprefixer: {
 			options: {
 				browsers: ['last 1 version']
